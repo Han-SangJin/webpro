@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+
+</style>
+<script>
+ function proc1(){
+	// name을 이용해서 접근한다
+	vname = document.ff.name.value;
+ 	vgender = document.ff.gender.value;
+ 
+ 	vhobby = document.ff.hobby;
+ 	
+ 	res = "이름 : " + vname + "\n";
+ 	res += "성별 : " + vgender + "\n";
+ 	res += "취미 : ";
+ 	for(i=0; i<vhobby.length; i++){
+ 		//console.log(vhobby[i].checked);
+ 		if(vhobby[i].checked){
+ 			res += vhobby[i].value + " ";
+ 		}
+ 	}
+ 	
+ 	//document.querySelector("#result1").innerHTML = res;
+ 	document.ff.area.value = res;
+ }
+ 
+</script>
+</head>
+<body>
+
+<div class="box">
+	<h3>1. </h3>
+	- form 문제2<br>
+	&nbsp;&nbsp;&nbsp;=>&nbsp;다음과 같은 입력 양식을 만들고 결과를 출력하는 프로그램을 작성하시오.<br>
+	&nbsp;&nbsp;&nbsp;=>&nbsp;(취미가 없을 경우는 "취미가 없군요"를 출력)<br>
+	&nbsp;&nbsp;&nbsp;=>&nbsp;38_checked_radio<br>
+	<br><br>
+<form name="ff">
+	이름 : <input type="textbox" name="name">
+	<br><br>
+	성별 : <input type="radio" name="gender" value="남" checked>남
+		 <input type="radio" name="gender" value="여">여
+	<br><br>
+	취미 : <input type="checkbox" name="hobby" value="여행">여행 
+		 <input type="checkbox" name="hobby" value="독서">독서 
+		 <input type="checkbox" name="hobby" value="영화감상">영화감상 
+		 <input type="checkbox" name="hobby" value="바둑">바둑 
+		 <input type="checkbox" name="hobby" value="장기">장기 
+		 <input type="checkbox" name="hobby" value="등산">등산 
+		 <input type="checkbox" name="hobby" value="낚시" checked="checked">낚시
+	<br><br>
+	<input type="button" value="결과출력" onclick="proc1()">
+	<br><br>
+	<textarea name="area" cols="60" rows="10"></textarea>
+</form>
+</div>
+</body>
+</html>

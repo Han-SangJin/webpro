@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+
+<style>
+	table#tab1 {
+		border : 3px solid blue;
+		border-collapse: collapse;
+		margin : 10px;
+	}
+	table#tab1 th{
+		height : 50px;
+	}
+	#tab1 td{
+		width : 200px;
+		height : 40px;
+		text-align : center;
+	}
+	#tab1 #tr1{
+		background : pink; 
+	}
+	
+	table#tab2 {
+		border : 3px solid magenta;
+		border-collapse: separate;
+		margin : 10px;
+	}
+	table#tab2 th{
+		height : 50px;
+	}
+	#tab2 td{
+		width : 170px;
+		height : 40px;
+		text-align : center;
+	}
+	#tab2 #tr2{
+		background : #91D0D2; 
+	}
+	
+	table#tab3 {
+		border : 3px solid red;
+		border-collapse: collapse;
+		margin : 10px;
+	}
+	table#tab3 th{
+		height : 50px;
+	}
+	#tab3 td{
+		width : 150px;
+		height : 40px;
+		text-align : center;
+	}
+	#tab3 #tr3{
+		background : rgba(255,0,0, 0.4); 
+	}
+	
+</style>
+	
+</head>
+<body>
+<pre>
+작성팁
+ table       : 표형태의 데이타를 표시
+  tr(row)    : 행, 줄
+  td(data)   : 열, 칸
+  th(header) : td대신 제목 표시
+ 
+ 스타일
+ table  : border, border-collapse
+  th    : height
+  td    : width, height
+  tr    : background
+</pre>
+	
+<table id="tab1" border=1>
+	<tr id="tr1">
+		<th>이름</th>
+		<th>주소</th>
+		<th>전화번호</th>
+	</tr>
+	
+	<tr>
+		<td>홍길동</td>
+		<td>대전</td>
+		<td>010-1234-5678</td>
+	</tr>
+	
+	<tr>
+		<td>개나리</td>
+		<td>서울</td>
+		<td>010-5678-5678</td>
+	</tr>
+	
+	<tr>
+		<td>진달래</td>
+		<td>부산</td>
+		<td>010-1234-1323</td>
+	</tr>
+	
+</table>
+	
+<table id="tab2" border=1>
+	<tr id="tr2">
+		<th>이름</th>
+		<th>주소</th>
+		<th>전화번호</th>
+	</tr>
+	
+	<tr>
+		<td>홍길동</td>
+		<td>대전</td>
+		<td>010-1234-5678</td>
+	</tr>
+	
+	<tr>
+		<td>개나리</td>
+		<td>서울</td>
+		<td>010-5678-5678</td>
+	</tr>
+	
+	<tr>
+		<td>진달래</td>
+		<td>부산</td>
+		<td>010-1234-1323</td>
+	</tr>
+	
+</table>	
+
+<table id="tab3" border=1>
+	<tr id="tr3">
+		<th>이름</th>
+		<th>주소</th>
+		<th>전화번호</th>
+	</tr>
+	
+	<tr>
+		<td>홍길동</td>
+		<td>대전</td>
+		<td>010-1234-5678</td>
+	</tr>
+	
+	<tr>
+		<td>개나리</td>
+		<td>서울</td>
+		<td>010-5678-5678</td>
+	</tr>
+	
+	<tr>
+		<td>진달래</td>
+		<td>부산</td>
+		<td>010-1234-1323</td>
+	</tr>
+	
+</table>	
+</body>
+</html>

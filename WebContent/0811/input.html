@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<script>
+	function proc2(){
+		// 입력한 값을 가져오기
+		namevalue = document.querySelector("#name").value;
+		addrvalue = document.querySelector("#addr").value;
+		telvalue = document.querySelector("#tel").value;
+			
+		res = "이름 : " + namevalue + "<br>";
+		res += "주소 : " + addrvalue + "<br>";
+		res += "전화번호 : " + telvalue + "<br>";
+		
+		window.close();
+		
+		
+		//document.querySelector("#result1").innerHTML = now;
+		opener.document.getElementById('result2').innerHTML = res;
+	}
+
+</script>
+</head>
+<body>
+
+<div class="box">
+	<h3>1. 입력</h3>
+	- 입력한 값을 부모창으로 보낸다<br>
+	- 부모창을 나타내는 속성은 opener
+	<br><br>
+	이름 : <input type="text" id="name"><br>
+	주소 : <input type="text" id="addr"><br>
+	전화번호 : <input type="text" id="tel"><br>
+	<input type="button" value="확인" onclick="proc2()">
+	<br><br>
+	<h2>실행결과</h2>
+	<div id="result2"></div>
+</div>
+</body>
+</html>

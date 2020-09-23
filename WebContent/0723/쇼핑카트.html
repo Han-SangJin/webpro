@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ div{
+ 	background : #E3DDCB;
+	width : 2000px;
+	height : 450px;
+ }
+ table{
+ 	border-collapse : collapse;
+ 	background : #E3DDCB;
+ }
+ td{
+ 	padding : 10px;
+ 	height : 50px;
+ }
+  td.t1{
+ 	width : 100px;
+ }
+ 
+</style>
+
+</head>
+<body>
+
+<form name="ff">
+<div>
+<h1>Shopping Cart</h1>
+<table border="1">
+ <tr>
+ 	<th>품목</th>
+	<th>가격</th>
+ 	<th>수량</th>
+  	<th>합계</th>
+ </tr>
+ <tr>
+ 	<td class="t1">컴퓨터</td>
+	<td>2,000,000원</td>
+ 	<td><input id="y" size="15px" value="0"></td>
+  	<td><input type="text" size="10px"></td>
+ </tr>
+ 
+ <tr>
+ 	<td>티셔츠</td>
+	<td>50,000원</td>
+ 	<td><input type="text" class="text1" size="15px" value="0"></td>
+  	<td><input type="text" size="10px"></td>
+ </tr>
+ 
+ <tr>
+ 	<td>음악파일</td>
+	<td>1,000</td>
+ 	<td><input type="text" class="text1" size="15px" value="0"></td>
+  	<td><input type="text" size="10px"></td>
+ </tr>
+  <tr>
+ 	<td>영화파일</td>
+	<td>5,000</td>
+ 	<td><input type="number" class="text1" size="15px" value="0"></td>
+  	<td><input type="number" size="10px"></td>
+ </tr>
+</table>
+<br>
+<button type="button" onclick="proc()">계산</button>
+<button type="button">구매</button>
+<button type="reset">초기화</button>
+<br>
+<a href="컴퓨터.html">Back to Home</a>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+#gugu{
+	width : 40px;
+	hieght : 50px;
+}
+</style>
+<script>
+ function proc1(){
+	vname = document.ff.gugu.value;
+	
+	res = vname + " 단" + "\n\n\n";
+	
+	for(i=1; i<=9; i++){
+		res += vname + " * " + i + " = "; 
+		res += vname*i + "\n"; 
+	}
+	
+	document.ff.area.value = res;
+ }
+            
+</script>
+</head>
+<body>
+<form name="ff">
+<div class="box" >
+	<input type="textbox" id="gugu"> 단
+	<input type="button" value="출력" onclick="proc1()">
+	<br><br>
+	<textarea name="area" cols="30" rows="30" ></textarea>
+</div>
+</form>
+</body>
+</html>

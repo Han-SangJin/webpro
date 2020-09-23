@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	img{
+		width : 100px;
+		height : 100px;
+	}
+</style>
+<script>
+ function proc1(){
+	result1 = document.querySelector("#result1");
+	
+	end = document.querySelector('end');
+	
+	 a= setInterval(function(){
+		// result1에서 첫번째 요소를 선택한다.
+		fc = result1.firstChild
+
+		// result1에 선택한 첫번째 요소를 추가한다
+		result1.appendChild(fc);
+		
+	},50);
+	//document.querySelector("#result1").innerHTML = res;
+	//document.getElementById('result1').innerHTML = res;
+ }
+ function proc2(){
+	 clearInterval(a);
+ }
+ 
+</script>
+</head>
+<body>
+
+<div class="box">
+	<h3>1. 이미지회전</h3>
+	- 1초마다 한번씩 맨처음 이미지를 마지막으로 옮긴다<br>
+	- 첫번째 이미지를 선택 : firstChild<br>
+	- result1에 추가한다 : appendChild()<br>
+	- 기존에 이미 존재하는 요소를 추가하면 기존의 요소는 삭제된다. - 잘라내기/붙여넣기<br>
+	<br>
+	<input type="button" value="확인" onclick="proc1()">
+	<input type="button" value="종료" onclick="proc2()">
+	<br><br>
+	<h2>실행결과</h2>
+	<div id="result1">
+		<img src="../images/대나무숲.jpg" alt="">
+		<img src="../images/뱅쇼.jpg" alt="">
+		<img src="../images/셔틀콕.jpg" alt="">
+		<img src="../images/식품2.jpg" alt="">
+		<img src="../images/옷2.jpg" alt="">
+		<img src="../images/커피2.jpg" alt="">
+	</div>
+</div>
+</body>
+</html>

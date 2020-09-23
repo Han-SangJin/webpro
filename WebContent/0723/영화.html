@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+ 	body{ 
+ 		height: 100%;
+		margin:	0px;
+		padding: 0px; 
+ 	} 
+ 	div#video {
+ 		display : block;
+ 		clear : both;
+ 	}
+	div{
+		box-sizing: border-box;
+		float : left;
+		width: 250px;
+		height: 400px;
+		border : 1px solid lightgrey;
+		margin : 10px;
+	}
+	div>img{
+		width: 220px;
+		height: 370px;
+		margin: 15px;
+	}
+	div>p{
+		margin : 10px;
+		font-size: 0.8em;
+	}
+	div>input{
+		margin : 15px;
+	}
+	video{
+		display: block;
+	}
+	
+</style>
+</head>
+<body>
+	<video width="700" height="400" controls>
+		<source src="../multi/trailer.mp4" type='video/mp4'>
+		<source src="../multi/trailer.ogv" type='video/ogv'>
+	</video>
+	<div>
+	<img alt="" src="../images/영화1.jpg">
+	<input type="button" value="쇼핑카트에 추가하기" onclick="addCart()">	
+	</div>
+	<div>
+	<img alt="" src="../images/영화2.jpg">
+	<input type="button" value="쇼핑카트에 추가하기" onclick="addCart()">
+	</div>
+</body>
+</html>

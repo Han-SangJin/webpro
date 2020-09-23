@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	div{
+		width : 50%;
+		height : 100px;
+		background : gold;
+	}
+</style>
+
+<script>
+window.onload = function(){   // 없이 실행하면 오류, div가 밑에 있어서 실행 순서가 안맞기때문
+							  // window.onload 없이 div 아래로 내려서 실행하면 오류안남	
+	var now = new Date();
+	vdiv = document.getElementsByTagName('div')[0];
+	
+	vdiv.style.color = 'red';
+	vdiv.innerHTML = now;
+}
+
+</script>
+
+</head>
+<body>
+<pre>
+
+작성팁
+	실행하자마 날짜생성하여 div에 출력 한다
+	body 보다 위쪽에서 코딩한 script 수행시 body 태그안의 요소에 접근할 수 없다.
+	
+	그래서 window.onload = function(){ } body안의 요소들로 싱행해 document객체를 만들고
+	window브라우저에 실행완료 후에 script를 나중에 실행한다.
+	
+	window.onload = function(){   // 없이 실행하면 오류, div가 밑에 있어서 실행 순서가 안맞기때문
+				      // window.onload 없이 div 아래로 내려서 실행하면 오류안남
+	}
+							  
+</pre>
+
+<br>
+<div></div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	div{
+		box-sizing : border-box;
+		margin : 5px;
+		padding : 5px;
+		border-radius : 30px;
+	}
+	#header{
+		height : 150px;
+		background : yellow;
+		text-align : center;
+	}
+	#nav{
+		width : calc(29% - 1%);
+		height : 600px;
+		float : left;
+		background : pink;
+		text-indent : 20px;
+	}
+	#content{
+		width : calc(70% - 1%);
+		height : 600px;
+		float : right;
+		background : lightgreen;
+	}
+	#footer{
+		height : 150px;
+		background : #9953e2;
+		clear : both;
+		text-align : center;
+		padding : 20px;
+	}
+	img{
+		width : 150px;
+		height : 150px;
+		padding-top : 30px;
+		padding-left : 100px;
+	}
+	#p{
+		text-indent : 100px;
+	}
+	#in{
+		height : 45%;
+		margin : 2%;
+		padding : 5%;
+		background : yellow;
+		border-width : 4px;
+		border-style : dotted;
+		border-color : orange;
+	}
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1>My Blog Page</h1>
+시멘틱 태그로 만들어진 페이지 입니다.
+</div>
+<div id="nav">
+<h2>Links</h2>
+	<ul>
+		<li><a href="">W3Cschool</a></li>
+		<li><a href="">Naver</a></li>
+		<li><a href="">Daum</a></li>
+	</ul>
+	<img src="../images/spongebob.png" alt="스폰지밥"><br>
+	<p id ="p">스폰지밥</p>
+
+</div>
+<div id="content">
+<div id ="in">
+<h2>Semantic tags</h2><br>
+시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는 요소이다. 레이아웃을 만들 때 쓰는 것 의미가 있는 요소라면 div보다는 시멘틱 태그를 사용해준다.
+</div>
+<div id ="in">
+<h2>div와 span</h2><br>
+div는 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다. span요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다.
+</div>
+
+</div>
+<div id="footer">
+Copyright (c)2019 Hong
+</div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	P{
+		font-size : 1.5em;
+	}
+	p[class=pp]{
+		color : blue;
+	}
+	span[class=pp]{
+		font-size : 2.0em;
+		font-weight : bold;
+	}
+	strong{
+		font-size : 1.4em;
+	}
+	p[id=p4]{
+		background-color : #f1d1e1;
+	}
+	p[title=무궁화1]{
+		border : 3px solid green;
+	}
+	p[title]{
+		font-style : italic;
+		color : red;
+	}
+	p[id]{
+		text-align : center;
+		text-shadow : 20px 10px 1px blue; //x좌표, y좌표, 그림자 선명도 1, 색은 blue
+	}
+	
+</style>
+</head>
+<body>
+<div>
+<pre>
+
+  작성팁
+     속성 관련 선택
+	<Strong>.pp  			pp전부다				일반					</Strong>
+	<Strong>p.pp 			p로 되어있는 pp				일반				</Strong>
+	<Strong>p[class=pp]	  	p로 되어있는 pp				속성관련 선택자		</Strong>
+	<Strong>span[class=pp] 		span중 pp만				일반			</Strong>
+	<Strong>#p4			#=id p4선택				속성관련 선택자			</Strong>
+	<Strong>p[id=p4]			아이디가 p4인것				일반			</Strong>
+	<Strong>p[title=무궁화1]		타이틀이 무궁화 1인것			속성관련 선택자	</Strong>
+	<Strong>p[title]			p중에서 타이틀 있는거 전부		속성관련 선택자	</Strong>
+	<Strong>p[id]			p중에서 id 있는거 전부			속성관련 선택자	</Strong>
+	
+	글자의 그림자
+	text-shadow : 20px 10px 1px blue; //x좌표, y좌표, 그림자 선명도 1(숫자커질수록 흐려짐), 그림자 색은 blue
+	
+</pre>
+	<p title="무궁화1" id="p1">무궁화 꽃이 피었습니다</p>
+	<p class="pp">무궁화 꽃이 피었습니다</p>
+	<p title="무궁화2" class="pp">무궁화 꽃이 피었습니다</p>
+	<p id="p4">무궁화 꽃이 피었습니다</p>
+	<p class="pp2">무궁화 꽃이 피었습니다</p>
+	
+	<span class="pp">사과</span>
+	<span>복숭아</span>
+	<span>수박</span>
+</div>
+</body>
+</html>

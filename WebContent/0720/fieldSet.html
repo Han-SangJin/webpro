@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/public.css">
+<style>
+	*{
+		color : red;
+	}
+	pre{
+		background : pink;
+	}
+	fieldset{
+		width : 50%;
+	}
+	label{
+		display : inline-block;
+		width : 100px;
+		height : 40px;
+	}
+	fieldset#emailsend{
+		border : 2px solid blue;
+	}
+	h2{
+		text : &nbsp;&nbsp;
+	}
+
+</style>
+</head>
+<body>
+<pre style = "background:yellow;">
+	작성팁
+	fieldset : 입력 항목들의 그룹핑
+	legend : fieldset의 제목
+	label : 일반 문자, 문자의 길이를 같게 하기 위해서 
+		- label 요소가 인라인 요소이기 때문에
+		 display : inline-block 의 형태로 스타일을 지정해야만 가로 세로 길이를 설정할 수 있다.
+</pre>
+	<form>
+		<fieldset>	<!-- 그룹 -->
+			<legend>인적사항</legend>	<!-- fieldset 의 제목 -->
+		
+			<label>이름 </label> 		<!-- 문자열의 길이를 맞추기 위해서 사용 -->
+			<input type="text"><br>
+	  
+	  	  	 <label>전화번호</label> 
+	   		 <input type="text"><br>
+		</fieldset>
+	
+		<fieldset>
+			<legend>경력사항</legend>
+		
+			<label>이메일</label>
+			<input type="text"><br>
+	    
+	    	<label>생일</label>
+	    	<input type="date"><br>
+		</fieldset>
+	</form>
+	
+	<hr>
+	
+	<h2>&nbsp;&nbsp;&nbsp;&nbsp;이메일 전송화면</h2>
+	<form>
+		<fieldset id="emailsend">	<!-- 그룹 -->
+			<label>이름 </label> 		
+			<input type="text"><br>
+	  
+	  	  	<label>이메일</label> 
+	   		<input type="text"><br>
+	   		 
+	   		내용<br>
+			<textarea name="area" rows="10" cols="60"></textarea> 
+			<br>
+			<input type="submit" value="전송">
+			<input type="reset" value="재설정">
+		</fieldset>
+	</form>
+		
+	<hr>	
+		
+	<h2>&nbsp;&nbsp;&nbsp;&nbsp;회원 가입 화면</h2>
+	<form>
+		<fieldset id="emailsend">	<!-- 그룹 -->
+			<label>이름 </label> 		
+			<input type="text"><br>
+	  
+	  	  	<label>주소</label> 
+	   		<input type="text"><br>
+	  	  	
+	  	  	<label>이메일</label> 
+	   		<input type="text"><br>
+	   		
+	   		<input type="radio" value="남자" name="gender">Male <br>
+			<input type="radio" value="여자" name="gender">Female <br>
+	   		 
+			<input type="submit" value="send">
+			<input type="reset" value="원래대로">
+		</fieldset>
+	</form>
+		
+</body>
+</html>

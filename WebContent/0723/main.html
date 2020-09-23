@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+	header {
+		width: calc(99% - 1%);
+		height: 120px;
+		background: #fc6;
+		border-radius: 80px;
+		text-align: center;
+	}
+	nav {
+		width: calc(99% - 1%);
+		height: 100px;
+		background: #9370DB;
+		border-radius: 80px;
+		margin-bottom: 20px;
+		text-align: center;
+		line-width: 40px;
+	}		     
+	aside#left {
+		height: 600px;
+		width: 20%;
+		background: #F5F0C5;
+		float: left;
+		border-radius: 30px;
+		color: white;
+		line-height: 50px;
+		  
+	}	 
+	section#main {
+		height: 600px;
+		width: 57%;
+		background: #E3DDCB;
+		float: left;
+		border-radius: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}	
+	article1 {
+		float: left;
+		width: 100%;
+		height: 100%;
+	}
+	aside#right {
+		height: 600px;
+		width: 20%;
+		background: #F5F0C5;
+		float: left;
+		border-radius: 30px;
+	}    
+	#footer { 
+		width: calc(100% - 4%);
+		height: 20px;
+		background: #6495ED;
+		clear: both;
+		text-align: center;
+		padding: 20px;
+		border-radius: 80px;
+	}   
+	table#tab1 {
+		border : 1px solid pink;
+		border-collapse: collapse;
+		margin : 10px;
+		background : pink;
+	}
+	 
+	
+	li {
+		display: inline;
+		margin: 4%;
+	}
+	#a_nav {
+		color: white;
+		font-size: 30px;
+	}
+	#a_title {
+		color: black;
+		font-size: 20px;
+		text-align: left;
+	}
+	#a_left {
+		float: left;
+		color: white;
+		font-size: 30px;
+	}
+	#a_right {
+		color: blue;
+		font-size: 15px;
+	}
+	tr {
+		width: 600px;
+		line-width: 40px;
+	}
+	td {
+		margin: 600px;
+		width: 600px;
+		line-width: 40px;
+	}
+	iframe {
+		width: 100%;
+		height: 600px;
+	}
+	
+	div#login{
+		margin : 20px;
+	}
+	.d1{
+      display:block;
+      height:30px;
+      margin:10px;
+      padding:10px;
+      border : 2px solid white;
+      box-sizing: content-box;
+      font-weight: bold;
+      color:white;
+      background : pink;
+   }
+</style>
+</head>
+<body>
+
+
+
+	<header>
+		<h1>
+			<img arc=“”> <br>
+			<a href="">Web Shopping</a>
+
+		</h1>
+	</header>
+ 
+
+
+	<nav>
+		<tr>
+			<br>
+			<td><li><a id="a_nav" href="index.html">Home</a></li></td>
+			<td><li><a id="a_nav" href="index.html">About Us</a></li></td>
+			<td><li><a id="a_nav" href="index.html">News</a></li></td>
+			<td><li><a id="a_nav" href="index.html">My Account</a></li></td>
+			<td><li><a id="a_nav" href="index.html">Contacts</a></li></td>
+		</tr>
+	</nav>
+					
+	
+	<aside id="left">
+		<div id="login">
+		<a id="a_title">카테고리</a>
+	
+		<div class="d1">
+			<a href="컴퓨터.html" target="ifr" style="color: white">컴퓨터</a>
+		</div>
+		<div class="d1">
+			<a href="의류.html" target="ifr" style="color: white">의류</a>
+		</div>
+		<div class="d1">
+			<a href="음악.html" target="ifr" style="color: white">음악</a>
+		</div>
+		<div class="d1">
+			<a href="영화.html" target="ifr" style="color: white">영화</a>
+		</div> 
+		<div class="d1">
+			<a href="스포츠레져.html" target="ifr" style="color: white">스포츠/레저</a>
+		</div>
+		<div class="d1">
+			<a href="가구인테리어.html" target="ifr" style="color: white">가구/인테리어</a>
+		</div>
+		<div class="d1">
+			<a href="식품.html" target="ifr" style="color: white">식품</a>
+		</div>
+		</div>
+	</aside>
+	
+
+
+
+	<section id="main">
+		<article id="article1">
+			<iframe src="컴퓨터.html" name="ifr"> </iframe>
+		</article>
+	</section>
+   
+            
+     
+	<aside id="right">
+		<div id="shopcart"></div>
+
+		<div id="login">
+			<a id="a_title">Shopping Cart</a>
+			<form action="#">
+			
+				<br>현재 쇼핑카트에 물품이 없습니다.<br>
+				<a id="a_right" href="쇼핑카트.html" target="ifr">쇼핑카트 보기</a><br>
+				<h2>Log In</h2>
+				<labe>아이디</label> <br><input type="text"><br>
+				<label> 패스워드</label> <br><input type="text"><br>
+				<br> <input type="button" value="로그인" onclick="add()">
+				<input type="reset" value="초기화"><br> 
+				<a id="a_right" href="회원가입.html" target="ifr">회원가입</a> 
+				<a id="a_right" href="비밀번호.html" target="ifr">비밀번호 변경</a>
+			</form>
+		</div>
+	</aside>
+
+	<div id="footer">2019.08.23 대덕인재개발원 042-1234-5678</div>
+
+</body>
+</html>

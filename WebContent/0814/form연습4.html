@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/public.css">
+<style>
+td{
+	width : 200px;
+	height : 100px;
+}
+</style>
+<script>
+ function proc1(){
+	vname = document.ff.gugu.value;
+	dan = parseInt(vname);
+	
+	res = dan + " 단" + "<br><br>";
+	for(i=2; i<=9; i++){
+		res += dan + " * " + i + " = "; 
+		res += dan * i + "<br>"; 
+	} 
+	
+	document.querySelector("#result1").innerHTML = res;
+	//document.getElementById('result1').innerHTML = res;
+ }
+
+</script>
+</head>
+<body>
+<form name="ff">
+<table border="1">
+	
+	<tr>
+		<td align="center">
+			<select name="gugu" size=1 >
+				<option value="2">2단</option>
+				<option value="3">3단</option>
+				<option value="4">4단</option>
+				<option value="5">5단</option>
+				<option value="6">6단</option>
+				<option value="7">7단</option>
+				<option value="8">8단</option>
+				<option value="9">9단</option>
+			</select>
+			<input type="button" value="출력" onclick="proc1()">
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			<h1>결과 출력</h1>
+		</td>
+	</tr>
+	
+	<tr>
+		<td align="center">
+			<div id="result1"></div>
+		</td>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>
